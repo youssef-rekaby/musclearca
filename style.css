@@ -1,0 +1,103 @@
+path {
+  transition-duration: 0.1s;
+  outline: #000000;
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-opacity: 1;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  stroke-miterlimit: 4;
+  stroke-width: 3.64724409;
+}
+g:hover path {
+  fill: #C73659;
+}
+svg{
+  width: fit-content;
+  height: 600px;
+  margin: 5px;
+}
+#icon{
+
+  width: 20px;
+  height: 20px;
+
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Ubuntu;
+  background-color: #151515;
+}
+.front , .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h3{
+  color: white;
+
+}
+h2{
+  font-size: 55px;
+  color: red;
+  font-weight: bold;
+}
+h1{
+  
+  color: red;
+}
+p{
+  font-size: 20px;
+
+}
+
+.more-info{
+  background-color: rgb(21, 21, 73);
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+.muscles{
+  display: flex;
+  flex-direction: row;
+}
+header {
+  background-color: transparent; /* Light background for the header */
+  padding: 10px 20px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Push h2 to the left and ul to the right */
+  align-items: center; /* Center items vertically */
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Space between list items */
+  color: rgba(168, 168, 168, 0.767);
+  margin-right: 20px;
+}
+
+li {
+  cursor: pointer;
+  
+}
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
