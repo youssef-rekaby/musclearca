@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Create the main draggable div (info box)
       const newDiv = document.createElement("div");
       newDiv.style.position = "absolute";
+      newDiv.style.alignSelf = "center"
       newDiv.style.background = "white";
       newDiv.style.border = "1px solid black";
       newDiv.style.padding = "10px";
@@ -144,11 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-  function updateLayout() {
-    document.querySelectorAll('.muscles').forEach(muscle => {
-      muscle.style.flexDirection = window.innerWidth <= 400 ? 'column' : 'row';
-    });
-  }
+  
   
   updateLayout(); // Apply on load
   window.addEventListener('resize', updateLayout); // Apply on resize
