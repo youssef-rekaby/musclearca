@@ -18,18 +18,17 @@ svg{
   margin: 5px;
 }
 #icon{
-
   width: 20px;
   height: 20px;
-
 }
 body{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: Ubuntu;
+  font-family: Tektur;
   background-color: #151515;
+  overflow-x: hidden;
 }
 .front , .back {
   display: flex;
@@ -39,7 +38,8 @@ body{
 }
 h3{
   color: white;
-
+  font-size: 32px;
+  font-weight: bolder;
 }
 h2{
   font-size: 55px;
@@ -47,59 +47,58 @@ h2{
   font-weight: bold;
 }
 h1{
-  
   color: red;
 }
 p{
   font-size: 20px;
-
 }
-
 .more-info{
   background-color: rgb(21, 21, 73);
   color: whitesmoke;
   border-radius: 5px;
   padding: 5px;
-
 }
 .muscles{
   display: flex;
   flex-direction: row;
 }
 header {
-  background-color: transparent; /* Light background for the header */
+  background-color: transparent;
   padding: 10px 20px;
   width: 100%;
 }
-
 nav {
   display: flex;
-  justify-content: space-between; /* Push h2 to the left and ul to the right */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  align-items: center;
 }
-
 h2 {
-  margin: 0;
-  font-size: 24px;
+  margin-left: 25px;
+  font-size: 30px;
 }
-
 ul {
   list-style: none;
-  margin: 0;
+  margin: 25px;
   padding: 0;
   display: flex;
-  gap: 20px; /* Space between list items */
+  gap: 20px;
   color: rgba(168, 168, 168, 0.767);
   margin-right: 20px;
 }
-
 li {
   cursor: pointer;
-  
+
 }
 a{
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-size: 25px;
+  transition-duration: 0.3s;
+  font-weight: bold;
+}
+a:hover{
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
 }
 @media screen and (max-width: 735px) {
   body {
