@@ -81,7 +81,7 @@ ul {
   margin: 25px;
   padding: 0;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   color: rgba(168, 168, 168, 0.767);
   margin-right: 20px;
 }
@@ -109,5 +109,9 @@ a:hover{
   }
   .front .back{
     flex-direction: column;
+  }
+  a{
+    font-size: 10px;
+    margin: 7px;
   }
 }
