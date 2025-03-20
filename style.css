@@ -125,3 +125,10 @@ a:hover {
 *{
   overflow:scroll;
 }
+*::selection{
+  background-color: #151515;
+  color: #ffffff;
+}
+span{
+  color: white;
+}
