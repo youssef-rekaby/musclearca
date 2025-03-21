@@ -1,4 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {  
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let loader = document.querySelector(".loader");
+    let mainContent = document.querySelector(".main-content"); // Wrap your main content in a div
+
+    // Show loader and apply blur effect to everything except it
+    loader.classList.add("active");
+    mainContent.style.filter = "blur(25px)"; // Apply blur to the page content
+    document.body.style.pointerEvents = "none"; // Disable interactions during loading
+
+    // Wait for 1 second, then remove the blur effect
+    setTimeout(() => {
+        mainContent.style.filter = "none"; // Remove blur
+        document.body.style.pointerEvents = "auto"; // Enable interactions
+        loader.classList.remove("active"); // Hide loader
+        mainContent.replaceWith(...mainContent.children);
+    }, 2000); // Keep the blur effect for 1s
+  
+
   let activeDiv = null; // Store the currently opened div  
   let moreInfoDiv = null; // Store the more info div  
 
@@ -38,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
       dragHeader.style.textAlign = "center";
       dragHeader.style.borderTopLeftRadius = "8px";
       dragHeader.style.borderTopRightRadius = "8px";
+      dragHeader.style.position = "sticky";
+      dragHeader.style.top = "0";
+      dragHeader.style.left = "0";
 
       dragHeader.textContent = "Drag Here";
       newDiv.prepend(dragHeader); // Add header at the top
