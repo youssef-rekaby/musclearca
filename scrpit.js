@@ -16,8 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
         loader.classList.remove("active"); // Hide loader
         mainContent.replaceWith(...mainContent.children);
     }, 2000); // Keep the blur effect for 1s
-  
+    
+    const ContactMe = document.getElementById('contact')
+  ContactMe.addEventListener('click', () => {
+    const ContactDiv = document.getElementById('contactDiv');
+    ContactDiv.style.display = 'block';
 
+    // making the close button
+    const CloseContact = document.getElementsByClassName('CloseContact')
+    CloseContact[0].addEventListener('click', () => {
+      ContactDiv.style.display = 'none'
+    })
+
+  })
+    
   let activeDiv = null; // Store the currently opened div  
   let moreInfoDiv = null; // Store the more info div  
 
@@ -226,4 +238,8 @@ function makeDraggable(element, dragArea) {
     isDragging = false;
     dragArea.style.cursor = "grab";
   });
+
+  
+  
+
 }
