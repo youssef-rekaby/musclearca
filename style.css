@@ -29,6 +29,7 @@ body {
   font-family: Tektur;
   background-color: #151515;
   overflow-x: hidden;
+  margin: 0;
 }
 .front,
 .back {
@@ -62,6 +63,7 @@ p {
 .muscles {
   display: flex;
   flex-direction: row;
+  margin-top:150px ;
 }
 header {
   background-color: transparent;
@@ -100,21 +102,7 @@ a:hover {
   color: rgb(255, 0, 0);
   text-decoration: underline;
 }
-@media screen and (max-width: 735px) {
-  body {
-    flex-direction: column;
-  }
-  .muscles {
-    flex-direction: column;
-  }
-  .front .back {
-    flex-direction: column;
-  }
-  a {
-    font-size: 10px;
-    margin: 7px;
-  }
-}
+
 .MoreInfoButton {
   background-color: #797b79;
   border-radius: 5px;
@@ -162,8 +150,10 @@ span{
 }
 header{
   position: fixed;
-  top: -16px;
-  
+  top: 0;
+  background-color: transparent;
+  padding: 10px 20px;
+  width: 100%;
 }
 #contactDiv{
   position: absolute;
@@ -196,4 +186,81 @@ header{
 }
 .CloseContact:hover{
   cursor: pointer;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #111010;
+  width: 100%;
+  margin: 0;
+  padding-left:100px;
+  justify-content: center;
+  align-items: center;
+
+}
+footer img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+footer h1{
+  font-size: 50px;
+}
+.people{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: max-content;
+}
+.youssef{
+  background-color: #000;
+  margin-right: 19px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+transition: 0.4S;
+}
+.youssef:hover{
+  background-color: #353535;
+  transform: scale(1.1);
+ border-radius: 10px;
+}
+.youssef p{
+  color: white;
+}
+.youssef h2{
+  align-self: flex-start;
+  position:relative;
+  left: -20px;
+  text-align: center;
+}
+.youssef img{
+  align-self: center;
+}
+
+@media screen and (max-width: 735px) {
+  body {
+    flex-direction: column;
+  }
+  .muscles {
+    flex-direction: column;
+    
+  }
+  .front .back {
+    flex-direction: column;
+  }
+  a {
+    font-size: 10px;
+    margin: 7px;
+  }
+  .people{
+    display: flex;
+    flex-direction: column;
+  }
+ .youssef{
+  margin-bottom: 10px;
+ }
+
 }

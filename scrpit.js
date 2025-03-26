@@ -1,6 +1,18 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
+
+
+   var footer = document.querySelector('footer');
+   footer.style.display = 'none'
+
+   var aboutbutton = document.getElementById('about')
+
+   aboutbutton.addEventListener('click', function(){
+    footer.style.display = 'flex'
+    footer.scrollIntoView({ behavior: "smooth" });  
+  })
+  
   let loader = document.querySelector(".loader");
     let mainContent = document.querySelector(".main-content"); // Wrap your main content in a div
 
