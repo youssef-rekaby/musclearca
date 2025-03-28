@@ -9,6 +9,7 @@ path {
   stroke-miterlimit: 4;
   stroke-width: 3.64724409;
 }
+
 g:hover path {
   fill: #c73659;
 }
@@ -29,6 +30,7 @@ body {
   font-family: Tektur;
   background-color: #151515;
   overflow-x: hidden;
+  overflow-y: auto;
   margin: 0;
 }
 .front,
@@ -118,7 +120,7 @@ a:hover {
   color: #ffffff;
 }
 span{
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 .loader {
   width: 60px;
