@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Show loader and apply blur effect to everything except it
   loader.classList.add("active");
-  mainContent.style.filter = "blur(100px)"; // Apply blur to the page content
+  mainContent.style.filter = "blur(60px)"; // Apply blur to the page content
   document.body.style.pointerEvents = "none"; // Disable interactions during loading
 
   // Wait for 1 second, then remove the blur effect
