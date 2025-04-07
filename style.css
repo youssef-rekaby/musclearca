@@ -1,7 +1,12 @@
-*::-webkit-scrollbar{
+*:not(body)::-webkit-scrollbar {
+  overflow: hidden;
   display: none;
 }
 
+/* Ensure the body retains its scrollbar */
+body {
+  overflow: auto;
+}
 
 path {
   transition-duration: 0.1s;
@@ -38,6 +43,7 @@ body {
   overflow-y: auto;
   margin: 0;
 }
+
 .front,
 .back {
   display: flex;
