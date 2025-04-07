@@ -1,3 +1,8 @@
+*::-webkit-scrollbar{
+  display: none;
+}
+
+
 path {
   transition-duration: 0.1s;
   outline: #000000;
