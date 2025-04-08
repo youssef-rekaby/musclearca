@@ -6,6 +6,7 @@
 /* Ensure the body retains its scrollbar */
 body {
   overflow: auto;
+  background-color: #000;
 }
 
 path {
@@ -38,7 +39,7 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: Tektur;
-  background-color: #151515;
+  background-color: black;
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0;
@@ -106,7 +107,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color:  rgba(255, 255, 255, 0.795);
   font-size: 25px;
   transition-duration: 0.3s;
   font-weight: bold;
@@ -136,7 +137,7 @@ span{
 .loader {
   width: 60px;
   aspect-ratio: 2;
-  --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+  --_g: no-repeat radial-gradient(circle closest-side,#fff1f1 90%,#ffffff00);
   background: 
       var(--_g) 0%   50%,
       var(--_g) 50%  50%,
@@ -179,6 +180,7 @@ header{
   height: fit-content;
   border-radius: 10px;
   display: none;
+  transition-duration:1s ;
 }
 #contactDiv h4{
   color: red;
@@ -196,6 +198,9 @@ header{
   box-shadow: none;
   border: none;
   color: #ffffff;
+}
+#contactDiv p{
+  color: white;
 }
 .CloseContact:hover{
   cursor: pointer;

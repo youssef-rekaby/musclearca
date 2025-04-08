@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const theme = document.getElementById('theme');
+    theme.style.display = 'none' ;
+    let isWhite = false;
+
+    theme.addEventListener("click", () => {
+      if (isWhite) {
+        document.body.style.backgroundColor = "black";
+        isWhite = false;
+      } else {
+        document.body.style.backgroundColor = "white";
+        isWhite = true;
+      }
+    });
+
   var footer = document.querySelector("footer");
   footer.style.display = "nonE";
 
@@ -266,4 +280,5 @@ function makeDraggable(element, dragArea) {
     isDragging = false;
     dragArea.style.cursor = "grab";
   });
+  
 }
