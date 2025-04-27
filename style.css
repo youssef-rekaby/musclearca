@@ -282,3 +282,19 @@ transition: 0.4S;
  }
 
 }
+.linkdiv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #272525;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  display: none;
+  transition-duration:1s ;
+}
+.linkdiv h4 {
+  font-size: 35px;
+}
