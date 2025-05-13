@@ -1,17 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const theme = document.getElementById('theme');
-    theme.style.display = 'none' ;
-    let isWhite = false;
+  const theme = document.getElementById("theme");
+  theme.style.display = "none";
+  let isWhite = false;
 
-    theme.addEventListener("click", () => {
-      if (isWhite) {
-        document.body.style.backgroundColor = "black";
-        isWhite = false;
-      } else {
-        document.body.style.backgroundColor = "white";
-        isWhite = true;
-      }
-    });
+  // the advanced mode code
+  const advancedbutton = document.getElementById("toggle-button");
+  const thebtn = document.getElementById("icon");
+  advancedbutton.addEventListener("click", () => {
+    thebtn.style.transitionDuration = "1s";
+    thebtn.style.position = "absolute";
+    thebtn.style.right = "0";
+
+    const state = document.getElementById("state");
+    state.textContent = "close";
+
+    const frontdet = document.getElementById("frontdet");
+    frontdet.style.display = "block";
+    const backdet = document.getElementById("backdet");
+    backdet.style.display = "block";
+
+    const frontmus = document.getElementById('front')
+    const backmus = document.getElementById('back')
+
+    frontmus.style.display = "none"
+    backmus.style.display = "none"
+  });
+
+  theme.addEventListener("click", () => {
+    if (isWhite) {
+      document.body.style.backgroundColor = "black";
+      document.body.style.backgroundColor = "black";
+      isWhite = false;
+    } else {
+      document.body.style.backgroundColor = "white";
+      isWhite = true;
+    }
+  });
 
   var footer = document.querySelector("footer");
   footer.style.display = "nonE";
@@ -280,5 +304,4 @@ function makeDraggable(element, dragArea) {
     isDragging = false;
     dragArea.style.cursor = "grab";
   });
-  
 }
