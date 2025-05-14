@@ -3,28 +3,53 @@ document.addEventListener("DOMContentLoaded", function () {
   theme.style.display = "none";
   let isWhite = false;
 
-  // the advanced mode code
-  const advancedbutton = document.getElementById("toggle-button");
-  const thebtn = document.getElementById("icon");
-  advancedbutton.addEventListener("click", () => {
-    thebtn.style.transitionDuration = "1s";
-    thebtn.style.position = "absolute";
-    thebtn.style.right = "0";
+ const advancedbutton = document.getElementById("toggle-button");
+const thebtn = document.getElementById("icon");
+const state = document.getElementById("state");
+const frontdet = document.getElementById("frontdet");
+const backdet = document.getElementById("backdet");
+const frontmus = document.getElementById("front");
+const backmus = document.getElementById("back");
 
-    const state = document.getElementById("state");
-    state.textContent = "close";
+let isOpen = false; // متغير للحالة
 
-    const frontdet = document.getElementById("frontdet");
+advancedbutton.addEventListener("click", () => {
+  if (!isOpen) {
+    // فتح
+    thebtn.classList.add("move-right");
+
+    state.textContent = "opened";
+    state.style.right = "40px";
+    state.style.marginRight = "5px";
+
     frontdet.style.display = "block";
-    const backdet = document.getElementById("backdet");
     backdet.style.display = "block";
 
-    const frontmus = document.getElementById('front')
-    const backmus = document.getElementById('back')
+    frontmus.style.display = "none";
+    backmus.style.display = "none";
 
-    frontmus.style.display = "none"
-    backmus.style.display = "none"
-  });
+    advancedbutton.style.background = "blue";
+    isOpen = true;
+  } else {
+    // قفل
+    thebtn.classList.remove("move-right");
+
+    state.textContent = "closed";
+    state.style.right = "";
+    state.style.marginRight = "";
+
+    frontdet.style.display = "none";
+    backdet.style.display = "none";
+
+    frontmus.style.display = "block";
+    backmus.style.display = "block";
+
+    advancedbutton.style.background = ""; // يرجع للون الأصلي
+
+    isOpen = false;
+  }
+});
+
 
   theme.addEventListener("click", () => {
     if (isWhite) {

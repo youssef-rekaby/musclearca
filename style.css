@@ -322,7 +322,7 @@ footer h1 {
   border: none;
   cursor: pointer;
   position: relative;
-  width: 100px;
+  width: 125px;
   height: 33px;
   transition-duration: 0.5s;
 }
@@ -338,10 +338,20 @@ footer h1 {
   width: 25px;
   height: 17px;
   margin-right: 5px;
+  transition: transform 1s ease;
+  position: absolute;
   
 }
 
 #frontdet,
 #backdet {
   display: none;
+}
+.move-right {
+  transform: translateX(350%); 
+  background-color: blue;
+}
+#state{
+ position: absolute;
+ right: 15px;
 }
