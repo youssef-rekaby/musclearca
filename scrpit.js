@@ -1,55 +1,62 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const theme = document.getElementById("theme");
-  theme.style.display = "none";
-  let isWhite = false;
+  // advanced mode
 
- const advancedbutton = document.getElementById("toggle-button");
-const thebtn = document.getElementById("icon");
-const state = document.getElementById("state");
-const frontdet = document.getElementById("frontdet");
-const backdet = document.getElementById("backdet");
-const frontmus = document.getElementById("front");
-const backmus = document.getElementById("back");
+  const togglebutton = document.getElementById("toggle-button");
+const icon = document.getElementById("icon");
+const toggleText = document.getElementById("toggle-state");
+const frontMuscles = document.getElementById("front");
+const backMuscles = document.getElementById("back");
+const frontDetailed = document.getElementById("frontDetailed");
+const backDetailed = document.getElementById("backDetailed");
 
-let isOpen = false; // متغير للحالة
+let isopen = false;
 
-advancedbutton.addEventListener("click", () => {
-  if (!isOpen) {
-    // فتح
-    thebtn.classList.add("move-right");
+togglebutton.addEventListener("click", () => {
+  if (!isopen) {
+    icon.classList.add("move-right");
+    togglebutton.style.backgroundColor = "blue";
+    toggleText.textContent = "opened";
+    toggleText.style.right = "47px";
 
-    state.textContent = "opened";
-    state.style.right = "40px";
-    state.style.marginRight = "5px";
+    frontMuscles.style.display = "none";
+    backMuscles.style.display = "none";
 
-    frontdet.style.display = "block";
-    backdet.style.display = "block";
+    frontDetailed.style.display = "flex";
+    backDetailed.style.display = "flex";
 
-    frontmus.style.display = "none";
-    backmus.style.display = "none";
-
-    advancedbutton.style.background = "blue";
-    isOpen = true;
+    isopen = true;
   } else {
-    // قفل
-    thebtn.classList.remove("move-right");
+    icon.classList.remove("move-right");
+    togglebutton.style.backgroundColor = ""; // Reset to default
+    toggleText.textContent = "closed";
+    toggleText.style.right = "15px";
 
-    state.textContent = "closed";
-    state.style.right = "";
-    state.style.marginRight = "";
+    frontMuscles.style.display = "flex";
+    backMuscles.style.display = "flex";
 
-    frontdet.style.display = "none";
-    backdet.style.display = "none";
+    frontDetailed.style.display = "none";
+    backDetailed.style.display = "none";
 
-    frontmus.style.display = "block";
-    backmus.style.display = "block";
-
-    advancedbutton.style.background = ""; // يرجع للون الأصلي
-
-    isOpen = false;
+    isopen = false;
   }
 });
 
+// ✅ Add hover once only
+togglebutton.addEventListener("mouseover", () => {
+  if (isopen) {
+    togglebutton.style.backgroundColor = "green";
+  }
+});
+
+togglebutton.addEventListener("mouseout", () => {
+  if (isopen) {
+    togglebutton.style.backgroundColor = "blue";
+  }
+});
+
+  const theme = document.getElementById("theme");
+  theme.style.display = "";
+  let isWhite = false;
 
   theme.addEventListener("click", () => {
     if (isWhite) {
@@ -86,7 +93,7 @@ advancedbutton.addEventListener("click", () => {
     document.body.style.pointerEvents = "auto"; // Enable interactions
     loader.classList.remove("active"); // Hide loader
     mainContent.replaceWith(...mainContent.children);
-  }, 2000); // Keep the blur effect for 1s
+  }, 500); // Keep the blur effect for 1s
 
   const ContactMe = document.getElementById("contact");
   ContactMe.addEventListener("click", () => {

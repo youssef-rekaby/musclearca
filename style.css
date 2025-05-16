@@ -309,11 +309,13 @@ footer h1 {
   padding: 30px;
   border-radius: 5px;
   flex-direction: column;
+  width: 200px;
+  
 }
 .toggle-button {
   display: inline-flex;
   align-items: center;
-  background-color: #ff0000;
+  background-color: #514848;
   border-radius: 25px;
   padding: 5px 15px;
   color: white;
@@ -326,9 +328,10 @@ footer h1 {
   height: 33px;
   transition-duration: 0.5s;
 }
-.toggle-button:hover {
-  background-color: #ff314d;
+.toggle-button:hover{
+  background-color: rgb(77, 79, 194);
 }
+
 .toggle-button .icon {
   background-color: white;
   border-radius: 50%;
@@ -338,20 +341,43 @@ footer h1 {
   width: 25px;
   height: 17px;
   margin-right: 5px;
-  transition: transform 1s ease;
+  transition: transform 0.5s ease;
   position: absolute;
   
 }
 
-#frontdet,
-#backdet {
+
+#frontDetailed,
+#backDetailed {
   display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .move-right {
   transform: translateX(350%); 
   background-color: blue;
 }
-#state{
+#toggle-state{
  position: absolute;
  right: 15px;
+ transition-duration: 0.5s;
+}
+.white-theme{
+  color: #000;
+}
+#theme{
+  background-color: white;
+  border: none;
+  display: none;
+}
+.advancedButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#advanced{
+      font-size: 18px;
+    margin-top: 2px;
 }
