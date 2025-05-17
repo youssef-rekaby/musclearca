@@ -44,7 +44,7 @@ togglebutton.addEventListener("click", () => {
 // ✅ Add hover once only
 togglebutton.addEventListener("mouseover", () => {
   if (isopen) {
-    togglebutton.style.backgroundColor = "green";
+    togglebutton.style.backgroundColor = "grey";
   }
 });
 
