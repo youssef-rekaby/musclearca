@@ -21,7 +21,7 @@ path {
   stroke-width: 3.64724409;
 }
 
-g:hover path {
+g:hover path:not(#g79 path) {
   fill: #c73659;
 }
 svg {
@@ -331,6 +331,9 @@ footer h1 {
 .toggle-button:hover{
   background-color: rgb(77, 79, 194);
 }
+#toggle-joint:hover{
+   background-color: rgb(77, 79, 194);
+}
 
 .toggle-button .icon {
   background-color: white;
@@ -348,7 +351,7 @@ footer h1 {
 
 
 #frontDetailed,
-#backDetailed {
+#backDetailed,#frontJoint{
   display: none;
   justify-content: center;
   align-items: center;
@@ -380,4 +383,73 @@ footer h1 {
 #advanced{
       font-size: 18px;
     margin-top: 2px;
+}
+ellipse{
+  transition-duration:0.5s ;
+}
+ellipse:hover {
+  fill: red;
+}
+.advancedJoints{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#joints-state{
+  position: absolute;
+ right: 15px;
+ transition-duration: 0.5s;
+}
+#jointsName{
+    font-size: 18px;
+    margin-top: 2px;
+}
+.joints-state{
+  position: absolute;
+ right: 15px;
+ transition-duration: 0.5s;
+}
+.welcomming{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  padding-top: 0;
+}
+.welcomming h1{
+  font-size: 50px;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.button a {
+  padding: 15px;
+  margin-left: 20px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #373434;
+  border: white;
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
+.quot{
+  color: rgb(187, 0, 255);
+}
+.one:hover{
+  background-color: rgb(252, 46, 94);
+  color: white;
+}
+.two:hover{
+  background-color:  rgba(187, 0, 255, 0.628);
+  color: whitesmoke;
+}
+h3{
+  text-align: center;
 }

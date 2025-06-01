@@ -41,6 +41,7 @@ togglebutton.addEventListener("click", () => {
   }
 });
 
+
 // ✅ Add hover once only
 togglebutton.addEventListener("mouseover", () => {
   if (isopen) {
@@ -110,8 +111,13 @@ togglebutton.addEventListener("mouseout", () => {
   let activeDiv = null; // Store the currently opened div
   let moreInfoDiv = null; // Store the more info div
 
-  const svgPaths = document.querySelectorAll("svg g.bodymap path");
+  const svgPaths = document.querySelectorAll("svg g.bodymap path:not(#g79 path)");
 
+  const svgEllipse = document.querySelectorAll("svg g.joints ellipse");
+ 
+
+
+//  the muscles 
   svgPaths.forEach((path) => {
     path.addEventListener("click", function () {
       if (activeDiv) {
