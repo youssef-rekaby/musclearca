@@ -443,11 +443,11 @@ ellipse:hover {
   color: rgb(187, 0, 255);
 }
 .one:hover{
-  background-color: rgb(252, 46, 94);
+  background-color: rgb(255, 40, 90);
   color: white;
 }
 .two:hover{
-  background-color:  rgba(187, 0, 255, 0.628);
+  background-color:  rgba(187, 0, 255, 0.818);
   color: whitesmoke;
 }
 h3{

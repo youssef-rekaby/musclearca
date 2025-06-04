@@ -1,5 +1,5 @@
 var i = 0;
-var text = "'SIMPLE , EASY AND INERACTIVE WAY'";
+var text = "'SIMPLE , EASY AND IN INERACTIVE WAY'";
 var speed = 100 ; 
 
 function typewriter(){
@@ -9,4 +9,7 @@ function typewriter(){
         setTimeout(typewriter,speed)
     }
 }
- document.body.addEventListener('DOMContentLoaded',typewriter())
+ document.addEventListener('DOMContentLoaded', typewriter);
+
+ 
+ 
