@@ -22,7 +22,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.45836581"
      inkscape:cx="329.4312"
-     inkscape:cy="603.22998"
+     inkscape:cy="557.41505"
      inkscape:window-width="1360"
      inkscape:window-height="705"
      inkscape:window-x="-8"
@@ -180,265 +180,148 @@
   </g>
   <g
      id="shoulders"
-     class="joints text-mw-red stroke-[#484a68] hover:text-mw-green hover:stroke-gray-900">
-    <ellipse
-       id="hover-2"
-       data-name="hover"
-       cx="441.13"
-       cy="261.13"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       id="hover"
-       cx="219.33"
-       cy="261.13"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       cx="441.13"
-       cy="261.13"
-       rx="12.04"
-       ry="12.3"
+     class="joints text-mw-red stroke-[#484a68] hover:text-mw-green hover:stroke-gray-900"
+     transform="translate(-8,-8)">
+    <circle
+       cx="444.78"
+       cy="270.52002"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse68" />
-    <ellipse
-       cx="219.33"
-       cy="261.13"
-       rx="12.04"
-       ry="12.3"
+       stroke-width="6.16694"
+       id="ellipse68"
+       style="display:inline;fill:#241c1c"
+       r="21.690001" />
+    <circle
+       cx="228.9801"
+       cy="270.52002"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse69" />
+       stroke-width="6.16694"
+       id="ellipse69"
+       style="display:inline;fill:#241c1c"
+       r="21.690001" />
   </g>
   <g
      id="elbow"
      class="joints text-mw-red stroke-[#484a68] hover:text-mw-green hover:stroke-gray-900">
-    <ellipse
-       id="hover-3"
-       data-name="hover"
-       cx="118.6"
-       cy="412.77"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       id="hover-7"
-       data-name="hover"
-       cx="541.86"
-       cy="412.77"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       cx="541.86"
-       cy="412.77"
-       rx="12.04"
-       ry="12.3"
+    <circle
+       cx="543.06848"
+       cy="417.71848"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse70" />
-    <ellipse
-       cx="118.6"
-       cy="412.77"
-       rx="12.04"
-       ry="12.3"
+       stroke-width="5.47277"
+       id="ellipse70"
+       r="19.248501"
+       style="fill:#241c1c" />
+    <circle
+       cx="119.8085"
+       cy="417.71848"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse71" />
+       stroke-width="5.47277"
+       id="ellipse71"
+       style="fill:#241c1c"
+       r="19.248501" />
   </g>
   <g
      id="wrist"
      class="joints text-mw-red stroke-[#484a68] hover:text-mw-green hover:stroke-gray-900">
-    <ellipse
-       id="hover-4"
-       data-name="hover"
-       cx="42.41"
-       cy="531.02"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       id="hover-8"
-       data-name="hover"
-       cx="618.05"
-       cy="531.02"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       cx="618.05"
-       cy="531.02"
-       rx="12.04"
-       ry="12.3"
+    <circle
+       cx="613.25848"
+       cy="535.96851"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse72" />
-    <ellipse
-       cx="42.41"
-       cy="531.02"
-       rx="12.04"
-       ry="12.3"
+       stroke-width="5.47277"
+       id="ellipse72"
+       style="fill:#241c1c"
+       r="19.248501" />
+    <circle
+       cx="41.981819"
+       cy="538.15021"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse73" />
+       stroke-width="5.47272"
+       id="ellipse73"
+       style="fill:#241c1c"
+       r="19.248501" />
   </g>
   <g
      id="hips"
      class="joints text-mw-red stroke-[#484a68] hover:text-mw-green hover:stroke-gray-900">
-    <ellipse
-       id="hover-6"
-       data-name="hover"
-       cx="412.75"
-       cy="523.37"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       id="hover-5"
-       data-name="hover"
-       cx="247.71"
-       cy="523.37"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       cx="412.75"
-       cy="523.37"
-       rx="12.04"
-       ry="12.3"
+    <circle
+       cx="412.39999"
+       cy="532.76001"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse74" />
-    <ellipse
-       cx="247.71"
-       cy="523.37"
-       rx="12.04"
-       ry="12.3"
+       stroke-width="6.16694"
+       id="ellipse74"
+       r="21.690001"
+       style="fill:#241c1c" />
+    <circle
+       cx="247.36002"
+       cy="532.76001"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse75" />
+       stroke-width="6.16694"
+       id="ellipse75"
+       r="21.690001"
+       style="fill:#241c1c" />
   </g>
   <g
      id="knees"
      class="joints text-mw-red stroke-[#484a68] hover:text-mw-green hover:stroke-gray-900">
-    <ellipse
-       id="hover-10"
-       data-name="hover"
-       cx="419.37"
-       cy="874.7"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       id="hover-9"
-       data-name="hover"
-       cx="241.09"
-       cy="874.7"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       cx="419.37"
-       cy="874.7"
-       rx="12.04"
-       ry="12.3"
+    <circle
+       cx="415.92999"
+       cy="878.09003"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse76" />
-    <ellipse
-       cx="241.09"
-       cy="874.7"
-       rx="12.04"
-       ry="12.3"
+       stroke-width="6.16694"
+       id="ellipse76"
+       style="fill:#241c1c"
+       r="21.690001" />
+    <circle
+       cx="237.65001"
+       cy="878.09003"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse77" />
+       stroke-width="6.16694"
+       id="ellipse77"
+       style="fill:#241c1c"
+       r="21.690001" />
   </g>
   <g
      id="ankles"
-     class="joints text-mw-red stroke-[#484a68] hover:text-mw-green hover:stroke-gray-900">
-    <ellipse
-       id="hover-11"
-       data-name="hover"
-       cx="221.14"
-       cy="1105.65"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       id="hover-12"
-       data-name="hover"
-       cx="439.32"
-       cy="1105.65"
-       rx="24.71"
-       ry="25.24"
-       fill="url(#jointradial)"
-       opacity="1"
-       stroke-width="0" />
-    <ellipse
-       cx="439.32"
-       cy="1105.65"
-       rx="12.04"
-       ry="12.3"
+     class="joints text-mw-red stroke-[#484a68] hover:text-mw-green hover:stroke-gray-900"
+     transform="translate(-8.7266544)">
+    <circle
+       cx="448.97"
+       cy="1115.04"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse78" />
-    <ellipse
-       cx="221.14"
-       cy="1105.65"
-       rx="12.04"
-       ry="12.3"
+       stroke-width="6.16694"
+       id="ellipse78"
+       r="21.690001"
+       style="fill:#241c1c" />
+    <circle
+       cx="230.78999"
+       cy="1115.04"
        fill="currentColor"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-width="3.46"
-       id="ellipse79" />
+       stroke-width="6.16694"
+       id="ellipse79"
+       style="fill:#241c1c"
+       r="21.690001" />
   </g>
 </svg>

@@ -113,9 +113,6 @@ togglebutton.addEventListener("mouseout", () => {
 
   const svgPaths = document.querySelectorAll("svg g.bodymap path:not(#g79 path)");
 
-  const svgEllipse = document.querySelectorAll("svg g.joints ellipse");
- 
-
 
 //  the muscles 
   svgPaths.forEach((path) => {

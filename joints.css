@@ -1,0 +1,10 @@
+g{
+    stroke:rgb(200, 192, 192);
+    transition-duration: 0.4s;
+}
+g:hover{
+    stroke: red;
+}
+svg{
+    margin-top: 100px;
+}

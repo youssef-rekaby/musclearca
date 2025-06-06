@@ -168,7 +168,7 @@ span {
   display: block;
 }
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   background-color: transparent;
   padding: 10px 20px;
