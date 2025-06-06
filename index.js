@@ -1,5 +1,5 @@
 var i = 0;
-var text = "'SIMPLE , EASY AND IN INERACTIVE WAY'";
+var text = "'SIMPLE , EASY AND IN INTERACTIVE WAY'";
 var speed = 100 ; 
 
 function typewriter(){
