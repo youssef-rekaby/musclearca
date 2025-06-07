@@ -21,8 +21,11 @@ path {
   stroke-width: 3.64724409;
 }
 
-g:hover path:not(#g79 path) {
+g:hover:not(#hidden) {
   fill: #c73659;
+}
+#hidden{
+  fill: blue;
 }
 svg {
   width: fit-content;

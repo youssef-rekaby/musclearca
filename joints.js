@@ -84,19 +84,26 @@ jointCircles.forEach((circle) => {
         moreInfoDiv.appendChild(moreInfoHeading);
       document.body.appendChild(moreInfoDiv);
 
-      const jointsMoreInfo = {
+    const jointsMoreInfo = {
   shoulder: "Ball-and-socket joint between humerus and scapula. Moves in all directions (flexion, extension, abduction, rotation). Main muscles: deltoid, rotator cuff. Stabilized by labrum and ligaments. Prone to dislocations and rotator cuff injuries.",
-  
+
   elbow: "Hinge joint linking humerus, radius, and ulna. Allows flexion/extension and forearm rotation. Biceps and triceps control movement. Stabilized by the ulnar collateral ligament. Common issues: tennis elbow, fractures.",
-  
+
   wrist: "Formed by radius and carpal bones (like scaphoid). Allows various motions: flexion, extension, and rotation. Controlled by forearm flexors/extensors. TFCC supports the joint. Prone to sprains and carpal tunnel syndrome.",
-  
+
   knee: "Largest hinge joint between femur, tibia, and patella. Allows flexion, extension, and slight rotation. Quadriceps and hamstrings power it. Menisci absorb shock; ACL, PCL, MCL, LCL stabilize. Common issues: ligament tears, arthritis.",
-  
+
   ankle: "Hinge joint of tibia, fibula, and talus. Enables dorsiflexion and plantarflexion; subtalar joint allows rotation. Controlled by calf and shin muscles. Stabilized by deltoid and lateral ligaments. Sprains are very common.",
-  
-  hip: "Ball-and-socket joint between femur and pelvis. Moves in all directions: flexion, extension, rotation. Key muscles: glutes, iliopsoas, adductors. Labrum and strong ligaments ensure stability. Can suffer from arthritis and labral tears."
+
+  hip: "Ball-and-socket joint between femur and pelvis. Moves in all directions: flexion, extension, rotation. Key muscles: glutes, iliopsoas, adductors. Labrum and strong ligaments ensure stability. Can suffer from arthritis and labral tears.",
+
+  upperScapula: "The upper region of the scapula (shoulder blade) includes the superior angle and the supraspinous fossa. It's the attachment site for muscles like the levator scapulae and supraspinatus. Plays a role in upward rotation and elevation of the scapula. Can be involved in shoulder impingement or tension headaches.",
+
+  scapula: "The scapula is a flat, triangular bone that connects the humerus (upper arm) with the clavicle (collarbone). It serves as a foundation for shoulder movement and muscle attachment, including the deltoid, trapezius, and rotator cuff. It glides along the rib cage during arm motion. Key movements: elevation, depression, protraction, retraction, and rotation. Dysfunction may cause winging or instability.",
+
+  'lower-spine': "The lower spine includes the lumbar vertebrae (L1–L5), sacrum, and coccyx. It supports body weight, enables bending and rotation, and protects spinal nerves. The lumbar region is large and strong, bearing heavy loads. The sacrum connects the spine to the pelvis, while the coccyx (tailbone) is a vestigial structure. Muscles like the erector spinae and multifidus stabilize this area. Common problems include herniated discs, lower back pain, and sciatica due to nerve compression."
 };
+
 
 
 const moreInfoParagraph = document.createElement("p");
@@ -119,14 +126,18 @@ const moreInfoParagraph = document.createElement("p");
     h1.style.textAlign = "center";
     newDiv.appendChild(h1);
 
-    const jointsInfo = {
-      shoulder: "The shoulder joint allows a wide range of arm movements.",
-      elbow: "The elbow joint connects the upper arm to the forearm and enables bending.",
-      wrist: "The wrist joint allows the hand to rotate and move in many directions.",
-      knee: "The knee joint supports body weight and allows leg bending.",
-      ankle: "The ankle joint connects the foot to the leg and supports movement.",
-      hip : "The hip is a ball-and-socket joint connecting the femoral head to the pelvis."
-    };
+   const jointsInfo = {
+  shoulder: "The shoulder joint allows a wide range of arm movements.",
+  elbow: "The elbow joint connects the upper arm to the forearm and enables bending.",
+  wrist: "The wrist joint allows the hand to rotate and move in many directions.",
+  knee: "The knee joint supports body weight and allows leg bending.",
+  ankle: "The ankle joint connects the foot to the leg and supports movement.",
+  hip: "The hip is a ball-and-socket joint connecting the femoral head to the pelvis.",
+  upperScapula: "Top part of the scapula, helps lift and rotate the shoulder.",
+  scapula: "Flat shoulder blade that anchors muscles and guides arm motion.",
+  'lower-spine': "Supports the upper body, allows bending and twisting, and protects spinal nerves in the lower back."
+};
+
 
     // Display muscle description
     const jointsDescription = document.createElement("p");
