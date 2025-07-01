@@ -312,7 +312,7 @@ footer h1 {
   padding: 30px;
   border-radius: 5px;
   flex-direction: column;
-  width: 200px;
+  width: 200;
   
 }
 .toggle-button {
@@ -382,6 +382,7 @@ footer h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 #advanced{
       font-size: 18px;
